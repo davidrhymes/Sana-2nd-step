@@ -1,0 +1,11 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form asp-action="HelloUser" asp-controller="SpellName">
+    <label>Введіть ім'я</label>
+    <input asp-for="Name" />
+    <button type="submit">Відправити</button>
+</form>
